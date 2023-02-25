@@ -3,9 +3,18 @@
     padding: 10rem 0;
     font-size: 1.4rem;
 
+    @include respond(tab-port){
+        padding: 8rem 0;
+    }
+
     &__logo-box {
         text-align: center;
         margin-bottom: 8rem;
+
+        @include respond(tab-port){
+            margin-bottom: 5rem;
+        }
+
     }
 
     &__logo {
@@ -21,6 +30,11 @@
         width: 72%;
         margin-left: 7.4rem;
         
+
+        @include respond(tab-port){
+            width: 67%;
+            text-align: center;
+        }
        
        
     }
@@ -64,6 +78,12 @@
         padding-top: 2rem;
         width: 80%;
         float: right;
+
+        @include respond(tab-port){
+            width: 100%;
+            float: none;
+            
+        }
         
     }
     
